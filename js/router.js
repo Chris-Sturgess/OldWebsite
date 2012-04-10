@@ -8,11 +8,12 @@ define([
   var AppRouter = Backbone.Router.extend({
     routes: {
       // Pages
-      '/modules': 'modules',	
-      '/optimize': 'optimize',
+      '/about': 'about',	
+      '/projects': 'projects',
       '/backbone/:section': 'backbone',
-      '/backbone': 'backbone',
-      '/manager': 'manager',
+      '/skills': 'skills',
+      '/future': 'future',
+      '/work': 'work',
     
       // Default - catch all
       '*actions': 'defaultAction'
@@ -22,10 +23,10 @@ define([
   var initialize = function(options){
 		var appView = options.appView;
     var router = new AppRouter(options);
-		router.on('route:optimize', function () {
-			require(['views/optimize/page'], function (OptimizePage) {
-				var optimizePage = Vm.create(appView, 'OptimizePage', OptimizePage);
-				optimizePage.render();
+		router.on('route:about', function () {
+			require(['views/about/page'], function (AboutPage) {
+				var aboutPage = Vm.create(appView, 'AboutPage', AboutPage);
+				aboutPage.render();
 			});
 		});
 		router.on('route:defaultAction', function (actions) {
@@ -34,22 +35,34 @@ define([
         dashboardPage.render();
       });
 		});
-		router.on('route:modules', function () {
-	   require(['views/modules/page'], function (ModulePage) {
-        var modulePage = Vm.create(appView, 'ModulesPage', ModulePage);
+		router.on('route:projects', function () {
+	   require(['views/projects/page'], function (ProjectsPage) {
+        var modulePage = Vm.create(appView, 'ProjectsPage', ProjectsPage);
         modulePage.render();
       });	  	
 		});
 		router.on('route:backbone', function (section) {
-      require(['views/backbone/page'], function (BackbonePage) {
-        var backbonePage = Vm.create(appView, 'BackbonePage', BackbonePage, {section: section});
-        backbonePage.render();
+      require(['views/skills/page'], function (SkillsPage) {
+        var skillsPage = Vm.create(appView, 'SkillsPage', SkillsPage, {section: section});
+        skillsPage.render();
       });
 		});
-		router.on('route:manager', function () {
-			require(['views/manager/page'], function (ManagerPage) {
-				var managerPage = Vm.create(appView, 'ManagerPage', ManagerPage);
-				managerPage.render();
+		router.on('route:future', function () {
+			require(['views/future/page'], function (FuturePage) {
+				var futurePage = Vm.create(appView, 'FuturePage', FuturePage);
+				futurePage.render();
+			});
+		});
+        router.on('route:work', function () {
+			require(['views/work/page'], function (WorkPage) {
+				var workPage = Vm.create(appView, 'WorkPage', WorkPage);
+				workPage.render();
+			});
+		});
+        router.on('route:skills', function () {
+			require(['views/skills/page'], function (SkillsPage) {
+				var skillsPage = Vm.create(appView, 'SkillsPage', SkillsPage);
+				skillsPage.render();
 			});
 		});
     Backbone.history.start();
