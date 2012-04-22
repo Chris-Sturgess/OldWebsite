@@ -21,7 +21,7 @@ Ext.application({
 	        	},
 	        	{
 	        		xtype: 'panel',
-	        		html: 'My name is Christopher Sturgess. I am currently enrolled in Computer Science at the University of Waterloo, in my 2B term. <br> I' + "'" + 've always had a passion for programming and software development, and I hope to continue working with new technology throughout my life.<br> You can contact me at: <br>chris@christophersturgess.com<br>226-929-7613'
+	        		html: 'My name is Christopher Sturgess. I am currently enrolled in Computer Science at the University of Waterloo, in my 2B term. <br> I' + "'" + 've always had a passion for programming and software development, and I hope to continue working with new technology throughout my life.<br> You can contact me at: <br><a href="mailto:chris@christophersturgess.com">chris@christophersturgess.com</a><br><a href="tel:2269297613">226-929-7613</a>'
 				}]
             },
             {
