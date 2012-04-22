@@ -13,11 +13,11 @@ Ext.application({
 			items: [
 			{
 				xtype: 'container',
-				autoEl: 'div',
 				items:[
     	        {
         	    	xtype: 'toolbar',
-                	title: 'About Me'
+                	title: 'About Me',
+                	docked: 'top'
 	        	},
 	        	{
 	        		xtype: 'panel',
