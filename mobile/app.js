@@ -84,8 +84,7 @@ Ext.application({
 	        	},
 	        	{
 	        		xtype: 'panel',
-	        		scrollable: true,
-	        		html: '<div><p>My name is Christopher Sturgess. I am currently enrolled in Computer Science at the University of Waterloo, in my 2B term. <br> I' + "'" + 've always had a passion for programming and software development, and I hope to continue working with new technology throughout my life.</p><p> You can contact me at: <br><a href="mailto:chris@christophersturgess.com">chris@christophersturgess.com</a><br><a href="tel:2269297613">226-929-7613</a></p><hr><br><p>This site was designed using Sencha Touch 2.0, Backbone.js, and require.js. Full website available <a href="http://chris-sturgess.github.com/main/index.html">here</a>. Scroll left and right to view the various pages.</p></div>'
+	        		html: '<div><p>My name is Christopher Sturgess. I am currently enrolled in Computer Science at the University of Waterloo, in my 2B term. <br> I' + "'" + 've always had a passion for programming and software development, and I hope to continue working with new technology throughout my life.</p><p> You can contact me at: <br><a href="mailto:chris@christophersturgess.com">chris@christophersturgess.com</a><br><a href="tel:2269297613">226-929-7613</a></p></div>'
 				}]
             },
             {
@@ -126,7 +125,20 @@ Ext.application({
 					title: 'Knowledge and Skills',
 					docked: 'top'
 				}]
-        	}]
+        	},
+        	{
+				xtype: 'container',
+				items:[
+    	        {
+        	    	xtype: 'toolbar',
+                	title: 'About This App',
+                	docked: 'top'
+	        	},
+	        	{
+	        		xtype: 'panel',
+	        		html: '<p>This site was designed using Sencha Touch 2.0, Backbone.js, and require.js. Full website available <a href="http://chris-sturgess.github.com/main/index.html">here</a>. Scroll left and right to view the various pages.</p>'
+				}]
+            }]
         });
     }
 });
