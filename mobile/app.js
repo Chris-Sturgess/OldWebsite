@@ -35,7 +35,6 @@ Ext.application({
 		
 		var workStore = Ext.create('Ext.data.Store', {
 		   model: 'Project',
-		   sorters: 'name',
 		
 		   data: [
 			   { name: 'Communitech Apps Factory', location: 'Kitchener, Ontario', date: 'January 2012 - April 2012',  description: '<ul><li>Used various web technologies to develop mobile applications on a wide range of devices</li><li>Worked with other students to create a total of 4 mobile applications over the course of the workterm</li></ul>'  },
@@ -43,6 +42,28 @@ Ext.application({
 			   { name: 'Tim Hortons', location: 'Orangeville, Ontario', date: 'April 2009 - September 2010',  description: "<ul><li>Performed various functions including: front counter cashier, food preparation, unloading supply trucks and clean up.</li><li>Gained experience in customer relations and working within a team environment</li></ul>"  }
 		   ]
 		});
+    
+    //Skills List
+    	Ext.define('Project', {
+			extend: 'Ext.data.Model',
+			config: {
+				fields: ['name', 'description']
+			}
+		});
+		
+		var skillsStore = Ext.create('Ext.data.Store', {
+		   model: 'Project',
+		   sorters: 'name',
+		
+		   data: [
+			   { name: 'Platforms', description: '<ul><li>iOS</li><li>Android</li><li>Blackberry</li><li>Playbook</li><li>Mac OSX</li><li>Windows</li><li>Web</li></ul>'  },
+			   { name: 'Languages', description: '<ul><li>C</li><li>C++</li><li>Java</li><li>JavaScript</li><li>Actionscript</li><li>Visual Basic</li><li>Objective-C</li><li>HTML (Including experience with HTML5)</li><li>Ruby on Rails</li></ul>'  },
+			   { name: 'Libraries', description: '<ul><li>backbone.js</li><li>require.js</li><li>zepto.js</li><li>jquery</li><li>jquery mobile</li><li>underscore.js</li><li>Phonegap</li></ul>'  },
+			   { name: 'Programs', description: '<ul><li>Adobe Photoshop</li><li>Adobe Flash</li><li>Aptana Studio</li><li>Open Office</li><li>Microsoft Office</li><li>XCode</li></ul>'  },
+			   { name: 'Other Hobbies and Interests', description: '<ul><li>Video Game Design</li><li>Fantasy and Science Fiction Novels</li><li>Member of Waterloo Science Fiction Club</li><li>Member of Waterloo Euchre Club</li><li>Complex Games</li><li>Improvisational Theatre</li><li>Philosophy</li><li>Curling</li><li>Martial Arts</li><li>Ultimate Frisbee</li></ul>'  }
+		   ]
+		});
+    
     
     	Ext.create('Ext.Carousel', {
         	fullscreen: true,
@@ -89,6 +110,19 @@ Ext.application({
 				{
 					xtype: 'toolbar',
 					title: 'Work History',
+					docked: 'top'
+				}]
+        	},
+        	{
+				xtype: 'list',
+				itemTpl: '<div class="skills"><strong>{name}</strong><br>{description}</div>',
+				store: skillsStore,
+				width: '100%',
+				padding: '0',
+				items: [
+				{
+					xtype: 'toolbar',
+					title: 'Knowledge and Skills',
 					docked: 'top'
 				}]
         	}]
