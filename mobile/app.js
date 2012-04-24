@@ -136,7 +136,7 @@ Ext.application({
 	        	},
 	        	{
 	        		xtype: 'panel',
-	        		html: '<p>This site was designed using Sencha Touch 2.0, Backbone.js, and require.js. Full website available <a href="http://chris-sturgess.github.com/main/index.html">here</a>. Scroll left and right to view the various pages.</p>'
+	        		html: '<p>This site was designed using Sencha Touch 2.0, Backbone.js, and Require.js. Full website available <a href="http://chris-sturgess.github.com/main/index.html">here</a>.</p>'
 				}]
             }]
         });
