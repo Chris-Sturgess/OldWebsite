@@ -60,7 +60,7 @@ Ext.application({
 			   { name: 'Languages', description: '<ul><li>C</li><li>C++</li><li>Java</li><li>JavaScript</li><li>Actionscript</li><li>Visual Basic</li><li>Objective-C</li><li>HTML (Including experience with HTML5)</li><li>Ruby on Rails</li></ul>'  },
 			   { name: 'Libraries', description: '<ul><li>backbone.js</li><li>require.js</li><li>zepto.js</li><li>jquery</li><li>jquery mobile</li><li>underscore.js</li><li>Phonegap</li></ul>'  },
 			   { name: 'Programs', description: '<ul><li>Adobe Photoshop</li><li>Adobe Flash</li><li>Aptana Studio</li><li>Open Office</li><li>Microsoft Office</li><li>XCode</li></ul>'  },
-			   { name: 'Other Hobbies and Interests', description: '<ul><li>Video Game Design</li><li>Fantasy and Science Fiction Novels</li><li>Member of Waterloo Science Fiction Club</li><li>Member of Waterloo Euchre Club</li><li>Complex Games</li><li>Improvisational Theatre</li><li>Philosophy</li><li>Curling</li><li>Martial Arts</li><li>Ultimate Frisbee</li></ul>'  }
+			   { name: 'Other Hobbies and Interests', description: '<ul><li>Video Game Design</li><li>Founding Member of University of Waterloo Mobile Application Development Club</li><li>Fantasy and Science Fiction Novels</li><li>Member of Waterloo Science Fiction Club</li><li>Member of Waterloo Euchre Club</li><li>Complex Games</li><li>Improvisational Theatre</li><li>Philosophy</li><li>Curling</li><li>Martial Arts</li><li>Ultimate Frisbee</li></ul>'  }
 		   ]
 		});
     
