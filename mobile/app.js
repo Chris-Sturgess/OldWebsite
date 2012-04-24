@@ -19,7 +19,7 @@ Ext.application({
 			   { name: 'Crosby', description: 'A tablet application designed using HTML5, Zepto.js, and Ruby on Rails to measure the reaction time of medical patients. Built to tablet devices with PhoneGap.'  },
 			   { name: 'Foodlink', description: 'A mobile application for the Waterloo Region developed with HTML5, PhoneGap, and the Google Maps API. Designed to allow users to find local food stores.'  },
 			   { name: 'Wheatley', description: 'A Playbook application designed using HTML5 designed as a sign-in system for companies. Keeps track of current guests, with many customizable fields for data. Also creates QR Code badges for guests, allowing them to scan to sign in instead of re-entering all other information.'  },
-			   { name: 'FoodAtTheHub.com', description: 'An HTML website using Ruby on Rails to store information regarding food currently available at the Communitech Kitchen. Available at <a href="http://www.foodatthehub.com">www.foodatthehub.com</a>'  },
+			   { name: 'FoodAtTheHub.com', description: 'An HTML website using Ruby on Rails to store information regarding food currently available at the Communitech Kitchen. Available at <a href="http://foodatthehub.com">www.foodatthehub.com</a>'  },
 			   { name: 'Yarn Shop', description: 'A native iOS application that allows customers to view selections and colours of yarn on their mobile devices.  <a href="http://itunes.apple.com/app/yarn-shop/id507312566?mt=8/">Currently available on the App Store.</a>'  },
 			   { name: 'www.christophersturgess.com', description: 'An online resume built using backbone.js and require.js for the main website, as well as Sencha Touch 2.0 for the mobile site. Available <a href="http://www.christophersturgess.com">here</a>. '  },
 		   ]
